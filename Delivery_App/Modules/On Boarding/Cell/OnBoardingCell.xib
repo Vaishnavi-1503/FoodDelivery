@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnBoardingCell" id="gTV-IL-0wX" customClass="OnBoardingCell" customModule="Delivery_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="397"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="397"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_OnBoardImgae1" translatesAutoresizingMaskIntoConstraints="NO" id="Jjb-3R-73C">
+                        <rect key="frame" x="0.0" y="0.0" width="337" height="397"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jjb-3R-73C" secondAttribute="trailing" id="1xn-W0-iAj"/>
+                <constraint firstAttribute="bottom" secondItem="Jjb-3R-73C" secondAttribute="bottom" id="eVJ-qh-YR5"/>
+                <constraint firstItem="Jjb-3R-73C" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hub-WA-dJw"/>
+                <constraint firstItem="Jjb-3R-73C" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mak-Kw-DIK"/>
+            </constraints>
+            <size key="customSize" width="337" height="372"/>
+            <connections>
+                <outlet property="imgViewOnBoard" destination="Jjb-3R-73C" id="QpI-xM-9o7"/>
+            </connections>
+            <point key="canvasLocation" x="74.045801526717554" y="44.718309859154935"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_OnBoardImgae1" width="225.66667175292969" height="295"/>
+    </resources>
+</document>

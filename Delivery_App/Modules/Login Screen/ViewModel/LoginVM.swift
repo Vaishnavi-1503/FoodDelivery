@@ -1,0 +1,16 @@
+//
+//  LoginVM.swift
+//  Delivery_App
+//
+//  Created by vaishanavi.sasane on 06/03/25.
+//
+
+import Foundation
+
+class LoginVM {
+    let viewDidDisappear = DelegateView<Void>()
+    let navigateToLoginPage = DelegateView<Void>()
+    let navigateToSignPage = DelegateView<Void>()
+    let navigateToResetPasswordPage = DelegateView<Void>()
+
+}
