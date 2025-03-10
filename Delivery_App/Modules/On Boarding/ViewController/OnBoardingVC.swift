@@ -9,6 +9,7 @@ import UIKit
 
 class OnBoardingVC: BaseVC {
     
+    /// IBOutlets
     @IBOutlet weak var collectionViewOnBoard: UICollectionView!
     @IBOutlet weak var btnNext: UIButton!
     @IBOutlet weak var lblOnBoardDesc: UILabel!
@@ -24,10 +25,10 @@ class OnBoardingVC: BaseVC {
         // Do any additional setup after loading the view.
         setupUI()
     }
-
+    
     @IBAction func btnNextTapped(_ sender: UIButton) {
     }
-
+    
 }
 
 // MARK: - UI & Utilities Methods
@@ -92,7 +93,7 @@ extension OnBoardingVC {
         lblOnBoardDesc.font = UIFont.interRegular(ofSize: .size13)
         btnNext.titleLabel?.font = UIFont.interRegular(ofSize: .size16)
     }
-
+    
     
 }
 

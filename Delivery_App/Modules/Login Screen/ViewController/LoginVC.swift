@@ -8,6 +8,8 @@
 import UIKit
 
 class LoginVC: BaseVC {
+    
+    /// IBOutlets
     @IBOutlet weak var lblLoginDesc: UILabel!
     @IBOutlet weak var lblLogin: UILabel!
     @IBOutlet weak var txtEmail: UITextField!
@@ -25,7 +27,7 @@ class LoginVC: BaseVC {
     /// Variable(s)
     var viewModel: LoginVM!
     
-    
+    /// View cycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareUI()

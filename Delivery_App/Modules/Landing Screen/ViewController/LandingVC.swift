@@ -8,7 +8,7 @@
 import UIKit
 
 class LandingVC: BaseVC {
-
+    
     /// Variable(s)
     var viewModel: LandingVM!
     
@@ -31,7 +31,7 @@ class LandingVC: BaseVC {
     /// UI setup
     func prepareUI()  {
         btnLogin.setBorder(radius: btnLogin.height/2, bWidth: 1, clr: .primaryButtonColor)
-         btnCreateAccount.setBorder(radius: btnCreateAccount.height/2, bWidth: 1, clr: .primaryButtonColor)
+        btnCreateAccount.setBorder(radius: btnCreateAccount.height/2, bWidth: 1, clr: .primaryButtonColor)
         lblDesc.font = UIFont.interRegular(ofSize: .size13)
         btnLogin.titleLabel?.font = UIFont.interRegular(ofSize: .size16)
     }
@@ -45,5 +45,5 @@ class LandingVC: BaseVC {
     @IBAction func createAccButtonTapped(_ sender: UIButton) {
         debugPrint("createAccButtonTapped")
     }
-
+    
 }

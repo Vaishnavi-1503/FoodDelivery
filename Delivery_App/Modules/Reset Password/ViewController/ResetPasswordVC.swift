@@ -8,7 +8,7 @@
 import UIKit
 
 class ResetPasswordVC: BaseVC {
-
+    
     /// IBOutlets
     @IBOutlet weak var btnSend: UIButton!
     @IBOutlet weak var lblResetPassDesc: UILabel!

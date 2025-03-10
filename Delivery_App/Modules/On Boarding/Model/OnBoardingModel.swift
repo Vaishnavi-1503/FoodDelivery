@@ -15,7 +15,7 @@ struct OnBoardingModel: Codable {
 // MARK: - InApp
 struct OnBoardingData: Codable {
     let title, desc, image: String
-
+    
     enum CodingKeys: String, CodingKey {
         case title, desc, image
     }

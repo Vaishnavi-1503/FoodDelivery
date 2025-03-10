@@ -8,7 +8,8 @@
 import UIKit
 
 class OTPVC: BaseVC {
-
+    
+    /// IBOutlets
     @IBOutlet weak var lblOTPDesc: UILabel!
     @IBOutlet weak var lblOTPHeader: UILabel!
     @IBOutlet var views: [UIView]!
@@ -24,7 +25,7 @@ class OTPVC: BaseVC {
         prepareUI()
         // Do any additional setup after loading the view.
     }
-
+    
     func prepareUI() {
         btnNext.setBorder(radius: btnNext.height/2, bWidth: 1, clr: .primaryButtonColor)
         lblOTPHeader.font = UIFont.interRegular(ofSize: .size30)
@@ -39,7 +40,7 @@ class OTPVC: BaseVC {
         lblOTPDesc.font = UIFont.interRegular(ofSize: .size14)
         btnNext.titleLabel?.font = UIFont.interRegular(ofSize: .size16)
     }
-
+    
     /// Actions
     @IBAction func btnNextTapped(_ sender: UIButton) {
         viewModel.navigateToNewPasswordPage.accept?(())

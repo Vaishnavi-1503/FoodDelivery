@@ -44,12 +44,14 @@ extension LandingCordinatior {
     
     private func navigateToLogin() {
         debugPrint("navigateToLogin")
-//        let loginVC = LoginCordinator()
-//        loginVC.navigationController = self.navigationController
-//        loginVC.start()
-        let onBoardingVC = OnBoardingCordinator()
-        onBoardingVC.navigationController = self.navigationController
-        onBoardingVC.start()
+        let loginVC = LoginCordinator()
+        loginVC.navigationController = self.navigationController
+        loginVC.start()
+        
+        /// Added for Testing
+        //        let onBoardingVC = OnBoardingCordinator()
+        //        onBoardingVC.navigationController = self.navigationController
+        //        onBoardingVC.start()
     }
     
     private func navigateToCreateAccount() {
@@ -58,4 +60,4 @@ extension LandingCordinatior {
 }
 
 
-        
+
